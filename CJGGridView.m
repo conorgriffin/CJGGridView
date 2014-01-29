@@ -27,6 +27,12 @@
 
     CGContextRef context = UIGraphicsGetCurrentContext();
     
+    /*
+    This is an 8x8 grid.  Core Graphics starts drawing from the bottom-left corner so
+    boardOrigin.y is set to 7-times the square's side length.  This starts drawing
+    squares beginning with the upper-left square, working right and then down through
+    each row with a couple of nested for-loops
+    */
     boardOrigin.y = self.squareSize * 7;
     
     for(int row = 0; row < 8; row++) {
@@ -49,8 +55,7 @@
             }
             
             CGContextFillRect(context, square);
-            CGContextStrokeRect(context, square);
-            
+
         }
         
     }
