@@ -9,3 +9,9 @@ Appearance
 Here is an example of how it looks, obviously in this case I've placed the chess pieces on the board.  
 
 <img width="320" height="320" src="http://i.imgur.com/w026f43.png" title="Hosted by imgur.com" />
+
+
+License
+===========
+
+This project uses the GPLv3 license
